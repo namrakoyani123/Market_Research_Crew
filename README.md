@@ -45,10 +45,5 @@ The market-research-crew Crew is composed of multiple AI agents, each with uniqu
 
 ## Support
 
-For support, questions, or feedback regarding the MarketResearchCrew Crew or crewAI.
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
+For support, questions, or feedback regarding the (https://github.com/namrakoyani123/Market_Research_Crew)
 
-Let's create wonders together with the power and simplicity of crewAI.
