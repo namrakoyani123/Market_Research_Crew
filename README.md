@@ -1,49 +1,141 @@
-# MarketResearchCrew Crew
+# 📊 Market Research Crew
 
-Welcome to the MarketResearchCrew Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+An AI-powered **multi-agent market research system** built using the CrewAI framework.
+This project leverages collaborative AI agents to perform in-depth research, analyze trends, and generate structured reports.
 
-## Installation
+---
 
-Ensure you have Python >=3.10 <3.14 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
+## 🚀 Features
 
-First, if you haven't already, install uv:
+* 🤖 **Multi-Agent System**
+  Multiple AI agents working together with defined roles
+
+* 📊 **Automated Market Research**
+  Generates insights and reports on selected topics
+
+* 🧠 **Customizable Agents & Tasks**
+  Easily configure agents and workflows using YAML
+
+* 📄 **Report Generation**
+  Outputs structured research results (`report.md`)
+
+* ⚡ **Powered by CrewAI**
+  Efficient orchestration of AI agents
+
+---
+
+## 🧠 Tech Stack
+
+* **Language:** Python
+* **Framework:** CrewAI
+* **Dependency Management:** UV
+* **LLM Support:** OpenAI
+
+---
+
+## 📂 Project Structure
+
+```
+market_research_crew/
+│── src/
+│   └── market_research_crew/
+│       ├── config/
+│       │   ├── agents.yaml
+│       │   ├── tasks.yaml
+│       ├── crew.py
+│       ├── main.py
+│── .env
+│── README.md
+```
+
+---
+
+## ⚙️ Installation
+
+Make sure you have **Python 3.10 – 3.13** installed.
+
+### 1️⃣ Install UV
 
 ```bash
 pip install uv
 ```
 
-Next, navigate to your project directory and install the dependencies:
+### 2️⃣ Install Dependencies
 
-(Optional) Lock the dependencies and install them by using the CLI command:
 ```bash
 crewai install
 ```
-### Customizing
 
-**Add your `OPENAI_API_KEY` into the `.env` file**
+---
 
-- Modify `src/market_research_crew/config/agents.yaml` to define your agents
-- Modify `src/market_research_crew/config/tasks.yaml` to define your tasks
-- Modify `src/market_research_crew/crew.py` to add your own logic, tools and specific args
-- Modify `src/market_research_crew/main.py` to add custom inputs for your agents and tasks
+## 🔐 Environment Setup
 
-## Running the Project
-
-To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
+Create a `.env` file in the root directory:
 
 ```bash
-$ crewai run
+OPENAI_API_KEY=your_openai_api_key_here
+SERPER_API_KEY=your_serper_api_key_here
+MODEL=your_model_name_here
 ```
 
-This command initializes the market-research-crew Crew, assembling the agents and assigning them tasks as defined in your configuration.
+---
 
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
+## ▶️ Running the Project
 
-## Understanding Your Crew
+Run the following command:
 
-The market-research-crew Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
+```bash
+crewai run
+```
 
-## Support
+👉 This will:
 
-For support, questions, or feedback regarding the (https://github.com/namrakoyani123/Market_Research_Crew)
+* Initialize AI agents
+* Execute defined tasks
+* Generate a `report.md` file with research output
 
+---
+
+## 🛠️ Customization
+
+You can easily customize the system:
+
+* ✏️ `config/agents.yaml` → Define agent roles and behavior
+* 🧩 `config/tasks.yaml` → Define research tasks
+* ⚙️ `crew.py` → Add tools and logic
+* 🧠 `main.py` → Customize inputs and execution
+
+---
+
+## 📈 Example Use Cases
+
+* Market trend analysis
+* Competitor research
+* Industry insights generation
+* AI-powered report creation
+
+---
+
+## 🔗 Project Link
+
+GitHub Repository:
+https://github.com/namrakoyani123/Market_Research_Crew
+
+---
+
+## 👩‍💻 Author
+
+**Namra Koyani**
+B.Tech Student | Developer | AI Enthusiast
+
+🔗 GitHub: https://github.com/namrakoyani123
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+⭐ If you found this project useful, consider giving it a star!
